@@ -1,1 +1,7 @@
-# Enter-The-Void
+# Projektnavn
+Enter-The-Void
+
+# Gruppemedlemmer
+Clara,
+Jan,
+Volkan
