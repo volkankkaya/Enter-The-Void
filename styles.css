@@ -5,7 +5,7 @@
 }
 
 body{
-    background:#2f2f2f;
+    background:#333333;
     overflow:hidden;
     font-family:Impact, sans-serif;
 }
@@ -159,4 +159,58 @@ body{
         opacity:0;
         visibility:hidden;
     }
+}
+
+
+/* home page */
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #212121;
+    font-family: sans-serif;
+    color: white;
+}
+
+/* --- SEKTION 1: INTRO --- */
+.hero-section {
+    width: 100%;
+    height: 85vh; /* Bevarer den reducerede højde */
+    overflow: hidden;
+}
+
+.intro-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.scroll-arrow {
+    display: block;
+    text-align: center;
+    font-size: 75px;
+    color: #ffffff;
+    padding: 20px 0;
+    animation: hop 1s infinite;
+    cursor: pointer;
+}
+
+.event-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;       /* Luft mellem pilen og dit event-billede */
+    padding-bottom: 80px;
+}
+
+.event-poster {
+    display: block;
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+}
+
+@keyframes hop {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(10px); } /* Hopper op og ned på stedet */
 }
