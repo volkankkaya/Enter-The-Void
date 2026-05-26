@@ -1,0 +1,162 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#2f2f2f;
+    overflow:hidden;
+    font-family:Impact, sans-serif;
+}
+
+#loading-screen{
+    position:fixed;
+    inset:0;
+
+    background:#2f2f2f;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    z-index:9999;
+}
+
+#loading-screen::before{
+    content:"";
+
+    position:absolute;
+    inset:0;
+
+    background:
+            repeating-linear-gradient(
+                    to bottom,
+                    rgba(255,255,255,0.03),
+                    rgba(255,255,255,0.03) 1px,
+                    transparent 1px,
+                    transparent 3px
+            );
+
+    pointer-events:none;
+}
+
+.loading-content{
+    text-align:center;
+}
+
+.logo-wrapper{
+    width:220px;
+    margin:auto;
+}
+
+.logo{
+    width:100%;
+    display:block;
+
+    filter:
+            drop-shadow(-2px 0 red)
+            drop-shadow(2px 0 cyan);
+
+    animation:
+            glitch 0.15s infinite,
+            flicker 2s infinite;
+}
+
+.loading-text{
+    margin-top:40px;
+
+    color:white;
+
+    font-size:4rem;
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+}
+
+.dots::after{
+    content:".";
+
+    animation:dots 1.5s infinite steps(1);
+}
+
+@keyframes dots{
+
+    0%{
+        content:".";
+    }
+
+    33%{
+        content:"..";
+    }
+
+    66%{
+        content:"...";
+    }
+
+    100%{
+        content:".";
+    }
+}
+
+@keyframes glitch{
+
+    0%{
+        transform:translate(0);
+    }
+
+    20%{
+        transform:translate(-2px,2px);
+    }
+
+    40%{
+        transform:translate(-2px,-2px);
+    }
+
+    60%{
+        transform:translate(2px,2px);
+    }
+
+    80%{
+        transform:translate(2px,-2px);
+    }
+
+    100%{
+        transform:translate(0);
+    }
+}
+
+@keyframes flicker{
+
+    0%,100%{
+        opacity:1;
+    }
+
+    5%{
+        opacity:0.8;
+    }
+
+    10%{
+        opacity:1;
+    }
+
+    15%{
+        opacity:0.6;
+    }
+
+    20%{
+        opacity:1;
+    }
+}
+
+.fade-out{
+    animation:fadeOut 1s forwards;
+}
+
+@keyframes fadeOut{
+
+    to{
+        opacity:0;
+        visibility:hidden;
+    }
+}
