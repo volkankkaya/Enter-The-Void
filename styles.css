@@ -160,7 +160,6 @@ body{
 }
 
 
-/* home page */
 html, body {
     margin: 0;
     padding: 0;
@@ -169,10 +168,9 @@ html, body {
     color: white;
 }
 
-/* --- SEKTION 1: INTRO --- */
 .hero-section {
     width: 100%;
-    height: 85vh; /* Bevarer den reducerede højde */
+    height: 85vh;
     overflow: hidden;
     position: relative;
 }
@@ -207,7 +205,7 @@ html, body {
     width: 100%;
     display: flex;
     justify-content: center;
-    padding-top: 35px;       /* Luft mellem pilen og dit event-billede */
+    padding-top: 35px;
     padding-bottom: 80px;
 }
 
@@ -220,14 +218,14 @@ html, body {
 
 @keyframes hop {
     0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(10px); } /* Hopper op og ned på stedet */
+    50% { transform: translateY(10px); }
 }
 
 .about-container h1 {
-    display: inline-block;     /* Gør at stregen kun fylder tekstens bredde og ikke hele skærmen */
-    border-bottom: 3px solid #ffffff; /* Sætter en 3px tyk, hvid, solid streg under teksten */
-    padding-bottom: 8px;       /* Giver luft mellem teksten og stregen */
-    font-size: 3.5rem;         /* Juster størrelsen på overskriften her, hvis den skal være større */
+    display: inline-block;
+    border-bottom: 3px solid #ffffff;
+    padding-bottom: 8px;
+    font-size: 3.5rem;
     margin-bottom: 20px;
 }
 
