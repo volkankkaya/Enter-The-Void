@@ -174,6 +174,16 @@ html, body {
     width: 100%;
     height: 85vh; /* Bevarer den reducerede højde */
     overflow: hidden;
+    position: relative;
+}
+
+.hero-logo {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 100px;
+    height: auto;
+    z-index: 10;
 }
 
 .intro-video {
@@ -213,9 +223,91 @@ html, body {
     50% { transform: translateY(10px); } /* Hopper op og ned på stedet */
 }
 
+.about-container h1 {
+    display: inline-block;     /* Gør at stregen kun fylder tekstens bredde og ikke hele skærmen */
+    border-bottom: 3px solid #ffffff; /* Sætter en 3px tyk, hvid, solid streg under teksten */
+    padding-bottom: 8px;       /* Giver luft mellem teksten og stregen */
+    font-size: 3.5rem;         /* Juster størrelsen på overskriften her, hvis den skal være større */
+    margin-bottom: 20px;
+}
+
 .about-container {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 65px;
+}
+
+
+.ticket-section{
+    width:100%;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:40px;
+    padding-bottom:60px;
+}
+
+.ticket-button{
+    background:#2f2f2f;
+    color:white;
+    border:none;
+    padding:18px 40px;
+    font-size:4rem;
+    letter-spacing:2px;
+    cursor:pointer;
+    position:relative;
+    overflow:hidden;
+    transition:0.3s;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+.resident-advisor {
+    width: 125px;
+    height: auto;
+    margin-left: 45px;
+}
+
+
+
+
+.footer-section {
+    background-color: #9B9A9A;
+    width: 100%;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.footer-links {
+    display: flex;
+    gap: 135px;
+}
+
+.footer-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.footer-item span {
+    border-bottom: 2px solid #000000;
+    padding-bottom: 2px;
+}
+
+.social-icon {
+    width: 55px;
+    height: auto;
 }
