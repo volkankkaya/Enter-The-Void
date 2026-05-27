@@ -65,12 +65,10 @@ body{
 
 .loading-text{
     margin-top:40px;
-
     color:white;
-
     font-size:4rem;
+    font-weight: bold;
     letter-spacing:2px;
-
     text-transform:uppercase;
 }
 
@@ -188,9 +186,9 @@ html, body {
 .scroll-arrow {
     display: block;
     text-align: center;
-    font-size: 75px;
+    font-size: 100px;
     color: #ffffff;
-    padding: 20px 0;
+    padding: 10px 0;
     animation: hop 1s infinite;
     cursor: pointer;
 }
@@ -199,18 +197,25 @@ html, body {
     width: 100%;
     display: flex;
     justify-content: center;
-    padding-top: 20px;       /* Luft mellem pilen og dit event-billede */
+    padding-top: 35px;       /* Luft mellem pilen og dit event-billede */
     padding-bottom: 80px;
 }
 
 .event-poster {
     display: block;
-    width: 90%;
-    max-width: 600px;
+    width: 95%;
+    max-width: 1000px;
     height: auto;
 }
 
 @keyframes hop {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(10px); } /* Hopper op og ned på stedet */
+}
+
+.about-container {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-weight: bold;
 }

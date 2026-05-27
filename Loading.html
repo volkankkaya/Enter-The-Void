@@ -23,15 +23,13 @@
 
 <script>
     setTimeout(() => {
-
         document
             .getElementById("loading-screen")
             .classList.add("fade-out");
 
-    }, 4000);
-
-    setTimeout(function () {
-        window.location.href = "index.html";
+        setTimeout(() => {
+            window.location.href = "index.html";
+        }, 1200);
     }, 4000);
 </script>
 
